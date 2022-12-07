@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  margin: 2rem;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  height: 100vh;
+}
+
+main > section > div.top-section {
+    background-color: rgb(128, 128, 128, 0.6);
+}
+
+main > aside > div {
+  background-color: gray;
+}
+
+main > section {
+}
+
+main > section > div.main-section > div {
+}
+
+.main-section {
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+div.main-section > div.card-box {
+  grid-area: 1 / 1 / 5 / 4;
+}
+div.main-section > div.footer-box {
+    grid-area: 5 / 1 / 6 / 4;
+    background-color: gray;
+}
+div.main-section > div.aside-box {
+  grid-area: 1 / 4 / 6 / 6;
+
+  border: 3px solid rgb(151, 151, 151, 0.5) !important;
+}
+
+.top-section {
+  height: 10%;
+  margin-bottom: 1rem;
+}
+
+aside {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+
+aside > div {
+  background-color: rgb(49, 126, 194);
+}
+
+.content-box {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+}
+
+.content-box > div {
+  background-color: rgb(172, 168, 168);
+}
+
+.content {
+  background-color: rgb(76, 74, 74) !important;
+  flex-grow: 1;
+  height: 10%;
+  /* flex-grow: 1; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.text {
+  background-color: white !important;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row !important;
+}
+
+.grid-text > div {
+  display: flex;
+  background-color: rgb(172, 168, 168) !important;
+}
+
+.grid-text {
+  background-color: white !important;
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.grid-3x3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    height: 45%;
+    gap: 1rem;
+}
+
+.badge-img {
+  display: block !important;
+  height: 70%;
+  flex-basis: 40%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* flex-wrap: wrap; */
+}
+
+.flex-column > div {
+    display: flex;
+    /* flex-grow: 1; */
+    background-color: rgb(180, 179, 179) !important;
+}
+
+
+section {
+  flex-basis: 80%;
+}
+
+.separator {
+    /* position: relative; */
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    background-color: rgb(101, 100, 100);
+    height: 0.5rem;
+}
+
+.navbar-section {
+  background-color: rgb(58, 58, 58);
+  height: 10vh;
+}
+
+.footer-nav {
+    height: 5vh;
+    background-color: rgb(197, 197, 197);
+}
